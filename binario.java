@@ -7,9 +7,9 @@ class binario{
 		binario= stdin.nextInt();
 		double resultado=0,b=0;
 		
-		while(binario%10!=0){
+		while(binario!=0){
 			resultado= resultado + (binario%10)*Math.pow(2,b);
-			binario=binario/10;
+			binario=(binario-binario%2)/10;
 			b++;
 
 		}
